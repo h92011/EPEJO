@@ -59,38 +59,50 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      width: 100%;
     }
 
     .banner-text {
       color: white;
-      font-size: 20px; /* Puedes ajustar este valor */
+      font-size: 20px;
       margin-bottom: 20px;
       max-width: 90%;
+      text-align: center;
     }
 
     .centered-icon {
-      max-width: 150px;
+      width: 150px;
       height: auto;
       margin-bottom: 20px;
+      display: block;
     }
 
     .login-btn {
       display: block;
+      text-align: center;
     }
 
     .login-btn img {
       width: 220px;
-      max-width: 80%;
+      max-width: 100%;
       height: auto;
+      display: block;
+      margin: 0 auto;
     }
 
     .image-bottom {
       display: block;
       max-width: 100%;
       height: auto;
+      margin-top: -20px; /* Puedes modificar este valor según lo que necesites */
     }
 
     @media (max-width: 600px) {
+      .banner {
+        padding-top: 100px;
+        padding-bottom: 60px;
+      }
+
       .banner-text {
         font-size: 18px;
         padding: 0 10px;
@@ -101,11 +113,15 @@
       }
 
       .centered-icon {
-        max-width: 120px;
+        width: 120px;
       }
 
       .login-btn img {
-        width: 200px;
+        width: 180px;
+      }
+
+      .image-bottom {
+        margin-top: 20px; /* Ajuste especial para móviles */
       }
     }
   </style>
@@ -136,7 +152,6 @@
       </div>
     </div>
 
-    <!-- Imagen inferior -->
     <img class="image-bottom" src="img/image copy.png" alt="Imagen inferior" />
 
   </div>
